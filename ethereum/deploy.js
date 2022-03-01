@@ -1,8 +1,8 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory = require('./build/Factory.json');
-const MNEMONIC = "bridge bacon fit treat pudding tank where brand stable that cave vault"
-const API = "https://rinkeby.infura.io/v3/6047a733ea644cd5a88358eff967ae41"
+const MNEMONIC = process.env.MNEMONIC
+const API = process.env.API
 
 const provider = new HDWalletProvider(
   MNEMONIC,
