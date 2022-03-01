@@ -1,3 +1,12 @@
 module.exports = {
-    trailingSlash: true,
-  }
+  reactStrictMode: true,
+   async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/coming-soon",
+        permanent: false,
+      },
+    ];
+  },
+}
